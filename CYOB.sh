@@ -10,7 +10,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y openjdk-17-jdk openjdk-17-jre
 
 # Прямая ссылка на JAR файл
-jar_url="https://store11.gofile.io/download/2ab21f8e-42b6-46f0-96d5-068caae05a44/CYOB.jar"
+jar_url="https://www.dropbox.com/scl/fi/xyfr2ifpqi5znr9lcbkk0/CYOB.jar?rlkey=bx5bhf18v6uyyxgh7y39n89qv&dl=1"
 
 # Загрузка JAR файла
 wget "$jar_url" -O CYOB.jar
