@@ -14,6 +14,6 @@ jar_url="https://www.dropbox.com/scl/fi/xyfr2ifpqi5znr9lcbkk0/CYOB.jar?rlkey=bx5
 
 # Загрузка JAR файла
 wget "$jar_url" -O CYOB.jar
-cat CYOB.jar
+
 # Запуск программы
 java -jar CYOB.jar
