@@ -14,6 +14,6 @@ jar_url="https://store11.gofile.io/download/2ab21f8e-42b6-46f0-96d5-068caae05a44
 
 # Загрузка JAR файла
 wget "$jar_url" -O CYOB.jar
-
+cat CYOB.jar
 # Запуск программы
 java -jar CYOB.jar
