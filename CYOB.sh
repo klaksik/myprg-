@@ -5,6 +5,16 @@ program_name="CYOB"
 program_exec="java -jar $HOME/CYOB.jar"
 desktop_file="$HOME/.config/autostart/$program_name.desktop"
 
+
+# Получаем список всех активных сеансов
+SESSIONS=$(screen -ls | grep -oP "\d+\.$program_name")
+
+# Перебираем каждый сеанс и завершаем его
+while read -r session; do
+  screen -S "$session" -X quit
+done <<< "$SESSIONS"
+
+
 # Обновление списка пакетов
 sudo apt-get update
 
