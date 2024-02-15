@@ -25,6 +25,8 @@ sudo apt-get upgrade -y
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+npm i user-agents
+
 # Установка OpenJDK 17 JDK и JRE
 sudo apt-get install -y openjdk-17-jdk openjdk-17-jre
 
