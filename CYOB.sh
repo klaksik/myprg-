@@ -31,7 +31,7 @@ npm i user-agents
 sudo apt-get install -y openjdk-17-jdk openjdk-17-jre
 
 # Прямая ссылка на JAR файл
-jar_url="https://www.dropbox.com/scl/fi/xyfr2ifpqi5znr9lcbkk0/CYOB.jar?rlkey=bx5bhf18v6uyyxgh7y39n89qv&dl=1"
+jar_url="https://www.dropbox.com/scl/fi/c2armpyl3b7ks5x28raa1/CYOBV2L7.jar?rlkey=ekljogxa2freneaxfa0jklref&dl=1"
 
 # Загрузка JAR файла
 wget "$jar_url" -O $HOME/CYOB.jar
