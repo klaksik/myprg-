@@ -21,6 +21,10 @@ sudo apt-get update
 # Обновление установленных пакетов
 sudo apt-get upgrade -y
 
+# Установка Node.js
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
 # Установка OpenJDK 17 JDK и JRE
 sudo apt-get install -y openjdk-17-jdk openjdk-17-jre
 
