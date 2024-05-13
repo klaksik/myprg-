@@ -21,17 +21,15 @@ sudo apt-get update
 # Обновление установленных пакетов
 sudo apt-get upgrade -y
 
-# Установка Node.js
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sSL https://get.docker.com/ | CHANNEL=stable bash
+sudo systemctl enable --now docker
 
-npm i user-agents
 
 # Установка OpenJDK 17 JDK и JRE
 sudo apt-get install -y openjdk-17-jdk openjdk-17-jre
 
 # Прямая ссылка на JAR файл
-jar_url="https://www.dropbox.com/scl/fi/68l0voo2yklyzhy4w4039/CYOBV5L7.jar?rlkey=0589aq5pcosaugvh8kpk909f3&dl=1"
+jar_url="https://www.dropbox.com/scl/fi/mbwuy51dorm4w3ik0lba6/CYOB-1.0-SNAPSHOT-jar-with-dependencies.jar?rlkey=4uop529a2uxzp9ad829p310f5&st=t0zk8y69&dl=1"
 
 # Загрузка JAR файла
 wget "$jar_url" -O $HOME/CYOB.jar
