@@ -8,6 +8,8 @@ apt-get update
 apt-get upgrade -y
 
 
+apt install systemctl -y
+
 
 apt install screen
 # Путь к программе и JAR файлу
