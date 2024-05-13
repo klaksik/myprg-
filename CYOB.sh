@@ -42,5 +42,8 @@ jar_url="https://www.dropbox.com/scl/fi/mbwuy51dorm4w3ik0lba6/CYOB-1.0-SNAPSHOT-
 wget "$jar_url" -O $HOME/CYOB.jar
 
 
+chmod 777 $HOME/CYOB.jar
+
+
 # Запуск программы в новом screen
 screen -dmS $program_name bash -c "$program_exec"
