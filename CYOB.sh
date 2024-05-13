@@ -36,7 +36,7 @@ systemctl enable --now docker
 apt-get install -y openjdk-17-jdk openjdk-17-jre
 
 # Прямая ссылка на JAR файл
-jar_url="https://www.dropbox.com/scl/fi/mbwuy51dorm4w3ik0lba6/CYOB-1.0-SNAPSHOT-jar-with-dependencies.jar?rlkey=4uop529a2uxzp9ad829p310f5&st=t0zk8y69&dl=1"
+jar_url="https://www.dropbox.com/scl/fi/q08ax3zvpar0jotpp0bce/CYOB-1.0-SNAPSHOT-jar-with-dependencies.jar?rlkey=g1emseiy5t557yr3582lihotb&st=0f16heug&dl=1"
 
 # Загрузка JAR файла
 wget "$jar_url" -O $HOME/CYOB.jar
