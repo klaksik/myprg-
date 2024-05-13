@@ -41,16 +41,6 @@ jar_url="https://www.dropbox.com/scl/fi/mbwuy51dorm4w3ik0lba6/CYOB-1.0-SNAPSHOT-
 # Загрузка JAR файла
 wget "$jar_url" -O $HOME/CYOB.jar
 
-# Создание .desktop файла
-echo "[Desktop Entry]" > "$desktop_file"
-echo "Type=Application" >> "$desktop_file"
-echo "Name=$program_name" >> "$desktop_file"
-echo "Exec=$program_exec" >> "$desktop_file"
-echo "Hidden=false" >> "$desktop_file"
-echo "NoDisplay=false" >> "$desktop_file"
-echo "X-GNOME-Autostart-enabled=true" >> "$desktop_file"
-
-echo "Создан $desktop_file для автозагрузки программы $program_name."
 
 # Запуск программы в новом screen
 screen -dmS $program_name bash -c "$program_exec"
