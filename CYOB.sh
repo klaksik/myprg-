@@ -1,5 +1,15 @@
 #!/bin/bash
 
+
+# Обновление списка пакетов
+apt-get update
+
+# Обновление установленных пакетов
+apt-get upgrade -y
+
+
+
+apt install screen
 # Путь к программе и JAR файлу
 program_name="CYOB"
 program_exec="java -jar $HOME/CYOB.jar"
@@ -15,11 +25,8 @@ while read -r session; do
 done <<< "$SESSIONS"
 
 
-# Обновление списка пакетов
-apt-get update
 
-# Обновление установленных пакетов
-apt-get upgrade -y
+
 
 curl -sSL https://get.docker.com/ | CHANNEL=stable bash
 systemctl enable --now docker
