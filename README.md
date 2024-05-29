@@ -1,2 +1,2 @@
-# myprg-
-i`m love cogda volosatie mujiki
+# CYOB
+
