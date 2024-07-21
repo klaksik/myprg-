@@ -7,7 +7,7 @@ apt-get update
 apt-get upgrade -y
 
 # Установка необходимых пакетов
-apt-get install -y openjdk-17-jdk openjdk-17-jre wget
+apt-get install -y openjdk-17-jdk openjdk-17-jre wget screen
 
 # Прямая ссылка на JAR файл
 jar_url="https://www.dropbox.com/scl/fi/xyfr2ifpqi5znr9lcbkk0/CYOB.jar?rlkey=bx5bhf18v6uyyxgh7y39n89qv&st=63m2gemo&dl=1"
